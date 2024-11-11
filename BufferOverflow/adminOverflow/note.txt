@@ -1,0 +1,25 @@
+m -A challenge
+
+challenge:08049278 T main
+challenge:080491c6 T printFlag
+challenge:080492ca T printName
+
+   0x08049276 <+176>:   leave   printFlag
+EBP  0xffffc898 —▸ 0xffffc908 —▸ 0xffffc938 ◂— '88889999'
+ESP  0xffffc870 —▸ 0x804c000 (_GLOBAL_OFFSET_TABLE_) —▸ 0x804bf14 (_DYNAMIC) ◂— 1
+EIP  0xf7df36ef (fgets+47) ◂— mov ecx, dword ptr [esi]
+
+# Function address: 08049278 --- 08049288
+
+--------
+Better Admin
+challenge:08049278 T main
+challenge:080491c6 T printFlag
+challenge:080492ca T printName
+
+0x08049276 <+176>:   leave 
+ EDI  0xf7ffcb80 (_rtld_global_ro) ◂— 0
+ ESI  0xffffca14 —▸ 0xffffcbba ◂— '/home/flynn/code/comp6841/ctf/BufferOverflow/BetterAdmin/challenge'
+ EBP  0x38383838 ('8888')
+ ESP  0xffffc940 —▸ 0xffffc900 —▸ 0x804a19c ◂— 'Now go away, or I will taunt you a second time.'
+ EIP  0x39393939 ('9999')

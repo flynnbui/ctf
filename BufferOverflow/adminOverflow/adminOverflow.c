@@ -22,8 +22,8 @@ int printName() {
 
     printf("What is your name?\n");
     printf("> ");
-    gets(&name);
-
+    gets(name, 16);
+    printf("NAME%d", isAdmin);
     if (isAdmin == FALSE) {
         printf("Welcome, %s!\n", name);
         printf("You are in this program, but we do not grant you the rank of Admin.\n");

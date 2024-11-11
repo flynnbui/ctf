@@ -23,7 +23,7 @@ int printName() {
     printf("What is your name?\n");
     printf("> ");
     gets(&name);
-
+    printf("NAME%d", isAdmin);
     if (isAdmin == TRUE) {
         printf("Welcome, %s!\n", name);
         printf("With great power comes great responsibility...\n");

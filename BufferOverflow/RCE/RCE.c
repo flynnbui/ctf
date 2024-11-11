@@ -21,6 +21,7 @@ int printName() {
 
     printf("Your buffer is located at: %p\n", name);
 
+
     printf("What is your name?\n");
     printf("> ");
     gets(&name);
